@@ -1,38 +1,283 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI');
+
+/* Login and register */
+html {
+    font-size: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.parent * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.container * {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.parent_div {
+    max-width: 40.0rem;
+    margin: 5.0rem auto;
+    padding: 3.0rem;
+    background-color: #fff;
+    border-radius: 2.0rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.parent {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+    max-width: 50.0rem;
+    margin: 5.0rem auto;
+    padding: 3.0rem;
+    background-color: #fff;
+    border-radius: 2.0rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: calc(100% - 2.0rem);
+    padding: 1.4rem;
+    margin: 1.0rem 0;
+    border: 1px solid #ccc;
+    border-radius: 2.0rem;
+    outline: none;
+    font-size: 1.6rem;
+
+}
+
+#male,
+#female,
+#preferNotToSay {
+    margin-right: 0.7rem;
+}
+
+#termsCheckbox {
+    margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 2.0rem;
+    font-size: 1.4rem;
+}
+
+.gender-select {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+
+}
+
+.gender-select label {
+    margin-right: 1.5rem;
+}
+
+.terms-checkbox {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    font-size: 1.6rem;
+}
+
+.parent_div h2,
+.container h2 {
+    text-align: center;
+    margin-bottom: 2.0rem;
+    font-size: 2.4rem;
+
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 2.0rem;
+}
+
+.register-link p {
+    font-size: 1.6rem;
+}
+
+.register-link a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Home */
+
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 1.0rem 0;
+}
+
+
+
+header h1 {
+    font-size: 4.2rem;
+    margin-bottom: 1.0rem;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 3.2rem;
+    color: #007bff;
+    margin-bottom: 1.0rem;
+    text-align: center;
+}
+
+
+main {
+    max-width: 80.0rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    padding: 2.0rem;
+}
+
+section {
+    margin-bottom: 4.0rem;
+}
+
+header p,
+main p,
+ul {
+    font-size: 2.4rem;
+    line-height: 1.6;
+    margin-bottom: 2.0rem;
+}
+
+ul {
+    text-align: left;
+
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 1.5rem 3.0rem;
+    cursor: pointer;
+    font-size: 2.4rem;
+    border-radius: .5rem;
+    transition: all 0.3s ease;
+}
+
+.about p,
+.ready p,
+.how p,
+.challenge p {
+
+    text-align: center;
+}
+
+.ready {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1.0rem 0;
+}
+
+footer p {
+    font-size: 2.2rem;
+
+}
+
+
+
+
+
+
+
+/* making responsive */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+    html {
+        font-size: 40.7%;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    html {
+        font-size: 53%;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    html {
+        font-size: 58%;
+    }
+}
+
+
+/* Extra Large Devices, Extra Wide Screens */
+@media only screen and (min-width: 1201px) {
+    html {
+        font-size: 62%;
+    }
 }
