@@ -10,7 +10,7 @@ function LoginComponent() {
 
     function submit(e) {
         e.preventDefault();
-        axios.post("http://localhost:5000/", {
+        axios.post("https://gambitor-backend.onrender.com/", {
             Email: Email,
             Password: Password
 

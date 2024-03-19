@@ -12,7 +12,7 @@ function Register() {
     async function handleSubmit(e) {
         e.preventDefault();
 
-        await axios.post("http://localhost:5000/register", {
+        await axios.post("https://gambitor-backend.onrender.com/register", {
             Name: Name,
             Email: Email,
             Mobile: Mobile,
